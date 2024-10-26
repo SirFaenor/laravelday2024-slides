@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@slidev/cli": "^0.50.0-beta.5",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-geist": "^0.8.1"
+  },
+  "scripts": {
+    "dev": "slidev slidev/slides.md --remote",
+    "build": "slidev build",
+    "export": "slidev export"
+  }
+}

@@ -5,7 +5,7 @@
 services:
   node:
     image: node:20-alpine
-    container_name: laravelday2024-slides
+    container_name: ${PROJECT_NAME}
     labels:
       - traefik.http.routers.${PROJECT_NAME}.rule=Host(`${WEB_HOST}`)
       - traefik.http.services.${PROJECT_NAME}.loadbalancer.server.port=3030

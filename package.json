@@ -1,9 +1,11 @@
 {
   "dependencies": {
     "@slidev/cli": "^0.50.0-beta.5",
+    "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
-    "slidev-theme-geist": "^0.8.1"
+    "slidev-theme-geist": "^0.8.1",
+    "slidev-theme-neversink": "^0.3.6"
   },
   "scripts": {
     "dev": "slidev slidev/slides.md --remote",

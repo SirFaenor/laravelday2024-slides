@@ -3,9 +3,8 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
 # apply any unocss classes to the current slide
-class: 'text-center'
+class: 'text-left'
 # some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
@@ -13,29 +12,33 @@ info: |
 
   Learn more at [Sli.dev](https://sli.dev)
 transition: slide-left
-title: Welcome to Slidev
+title: LaravelDay 2024
 mdc: true
+layout: intro
+fonts:
+  # basically the text
+  sans: 'Ubuntu Sans'
+  # use with `font-serif` css class from UnoCSS
+  serif: 'Ubuntu'
+  # for code blocks, inline code, etc.
+  mono: 'Fira Code'
+  local: 'Helvetica Neue'
+hideInToc: true
 ---
 
-# Welcome to Slidev
+<h2 class="font-300">Emanuele Fornasier | <span class="font-600">laravel</span>day 2024</h2>
 
-Presentation slides for developers
+<h1 class="font-400 mt-8">Integrare funzionalità <span class="font-700">moderne</span> in un'applicazione <span class="font-700">legacy</span> attraverso <span class="font-700">API</span>: un caso reale</h1>
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+<div class="absolute bottom-[10px]">
+  <span class="font-500 text-sm">
+    7 novembre 2024
   </span>
 </div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
+<!-- <div class="anim">
 </div>
+
+
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -43,57 +46,18 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
+src: ./pages/02-chi-sono.md
 ---
 
-# What is Slidev?
-
-Slidev is a slide maker and accompanying presentation tool designed for developers. It consists of the following features:
-
-- 📝 **Text-based** - focus on the content with Markdown, and apply styles later
-- 🎨 **Themable** - themes can be shared and used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your slides
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-
-<br>
-<br>
-
-Read more about Slidev in [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tags in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
 ---
-layout: default
+transition: fade-out
+src: ./pages/03-table-of-contents.md
 ---
 
-# Table of contents
-
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-<Toc maxDepth="1"></Toc>
+---
+transition: fade-out
+src: ./pages/04-app-legacy.md
+---
 
 ---
 transition: slide-up

@@ -1,0 +1,44 @@
+.slidev-layout {
+    /* h1 {
+        color: rgb(130, 130, 130);
+    } */
+
+    a.decoration-none {
+        text-decoration: none;
+        border-bottom-width: 0;
+    }
+
+    &.cover, &.intro, &.section {
+        h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            background-image: linear-gradient(135deg, rgb(223, 135, 216) 10%, rgb(166, 169, 203) 50%, rgb(128, 192, 195) 80%);
+        }
+    }
+}
+
+.slidev-vclick-target {
+    transition: opacity 500ms ease;
+  }
+  
+  .slidev-vclick-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+:root {
+/* --neversink-title-font: 'Ubuntu Sans', sans-serif;
+    --neversink-main-font: 'Ubuntu Sans', sans-serif;
+    --neversink-mono-font: 'Fira Code', monospace;
+    --neversink-quote-font: 'Fira Code', monospace; */
+}
+h1 {
+    background-image: linear-gradient(90deg, rgb(166, 169, 203) 10%, rgb(128, 192, 195) 80%, red 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+  } 
+
